@@ -18,7 +18,7 @@
     <p>Resultado=<span id="resultado"></span>
 
 
-    </p>
+    </p>\
 
     <div class="form">
         <div>Sf=<input type="text" name="numero" id="text_Sf"> </div>
@@ -32,34 +32,37 @@
 
 
     </div>
+
+    <button onclick="derem()">Calcular</button>
     <script>
-        var valor_Sf = document.getElementById("text_Sf").value;
-        var valor_Si = document.getElementById("text_Si").value;
-        var valor_Tf = document.getElementById("text_Tf").value;
-        var valor_Ti = document.getElementById("text_Ti").value;
+        function derem(){
+            alert ("derem é adotado");
+            var valor_Sf = document.getElementById("text_Sf").value;
+            var valor_Si = document.getElementById("text_Si").value;
+            var valor_Tf = document.getElementById("text_Tf").value;
+            var valor_Ti = document.getElementById("text_Ti").value;
+
+            
+
+
+            var Sf = valor_Sf;
+            var Si = valor_Si;
+            var Tf = valor_Tf;
+            var Ti = valor_Ti;
+            var S  = Sf - Si;
+            var T  = Tf - Ti;
+            var Vm = S/T;
 
 
 
 
-        var Sf = 9;
-        var Si = 5;
-        var Tf = 3;
-        var Ti = 1;
 
-        var S  = Sf - Si;
-        var T  = Tf - Ti;
-        var Vm = S/T
-
-
-
-
-
-       document.getElementById("var_Sf").textContent = Sf;
-       document.getElementById("var_Si").textContent = Si;
-       document.getElementById("var_Tf").textContent = Tf;
-       document.getElementById("var_Ti").textContent = Ti;
-       document.getElementById("resultado").textContent = Vm;
-
+        document.getElementById("var_Sf").textContent = Sf;
+        document.getElementById("var_Si").textContent = Si;
+        document.getElementById("var_Tf").textContent = Tf;
+        document.getElementById("var_Ti").textContent = Ti;
+        document.getElementById("resultado").textContent = Vm;
+        }
 
 
     </script>
