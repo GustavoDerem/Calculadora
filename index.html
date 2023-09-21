@@ -33,10 +33,25 @@
 
     </div>
 
-    <button onclick="derem()">Calcular</button>
+    <button onclick="derem()" >
+        <a onmouseover="derem2('lampada', 'imagens/on.jpg')"
+        onmouseout= "derem2('lampada', 'imagens/of.png')">
+        <img src="imagens/of.png" alt="" id="lampada" width="40rem">
+   </a>
+   </button>
     <script>
+    function derem2(objeto, imagem){
+
+        
+lampada.src = imagem;
+}
+
+
+
+
         function derem(){
-            alert ("derem é adotado");
+
+            alert ("mourvan adotado sem pai");
             var valor_Sf = document.getElementById("text_Sf").value;
             var valor_Si = document.getElementById("text_Si").value;
             var valor_Tf = document.getElementById("text_Tf").value;
@@ -67,5 +82,8 @@
 
     </script>
 
+
+
 </body>
-</html>
+</html>Resultado=NaN
+
