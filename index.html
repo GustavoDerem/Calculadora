@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>Calculo aleatorio</h1>
+    <h1 class="center">Calculo aleatório</h1>
     
     
-   <p>Vm=<span id="var_Sf"></span>-
+   <p class="center">Vm=<span id="var_Sf"></span>-
        <span id="var_Si"></span>/
        <span id="var_Tf"></span>-
        <span id="var_Ti"></span>
     </p>
 
-    <p>Resultado=<span id="resultado"></span>
+    <p class="center">Resultado=<span id="resultado" ></span>
 
 
-    </p>\
+    </p>
 
     <div class="form">
         <div>Sf=<input type="text" name="numero" id="text_Sf"> </div>
@@ -32,19 +33,21 @@
 
 
     </div>
-
+<div class="center">
     <button onclick="derem()" >
         <a onmouseover="derem2('lampada', 'imagens/on.jpg')"
         onmouseout= "derem2('lampada', 'imagens/of.png')">
         <img src="imagens/of.png" alt="" id="lampada" width="40rem">
    </a>
    </button>
+   </div>
     <script>
     function derem2(objeto, imagem){
 
         
 lampada.src = imagem;
 }
+
 
 
 
@@ -85,5 +88,5 @@ lampada.src = imagem;
 
 
 </body>
-</html>Resultado=NaN
+</html>
 
